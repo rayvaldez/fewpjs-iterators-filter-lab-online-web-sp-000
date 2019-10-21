@@ -10,3 +10,9 @@ function fuzzyMatch(array, string) {
     return driver.toLowerCase().slice(0, string.length) ===string.toLowerCase()
   })
 }
+
+function matchName(array, name) {
+  return array.filter((driver) =>{
+    return array.name.toLowerCase() === name.toLowerCase()
+  })
+}

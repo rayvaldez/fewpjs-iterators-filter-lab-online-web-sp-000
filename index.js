@@ -4,3 +4,9 @@ function findMatching(array, name) {
     return driver.toLowerCase() === name.toLowerCase()
   })
 }
+
+function fuzzyMatch(array, string) {
+  return array.filter((driver) => {
+    return driver.toLowerCase().slice(0, string.length) ===string.toLowerCase()
+  })
+}

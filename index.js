@@ -1,4 +1,4 @@
 // Code your solution here
-function findMatching() {
-  
+function findMatching(array, name) {
+  array.filter(n => name)
 }
